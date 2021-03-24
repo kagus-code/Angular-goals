@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+body {
+  font-family: "Patrick Hand", cursive;
+  background-image: url(src/assets/background.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  animation: drop 1.5s ease;
+}
+.row {
+  margin-left: 450px;
+}
+#my-goals {
+  margin-left: 450px;
+}
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
