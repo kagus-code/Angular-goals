@@ -1,6 +1,16 @@
 <div class="container">
+  <ng-progress></ng-progress>
   <h1 id="my-goals">My Goals</h1>
   <p id="warn" *ngIf="goals.length > 5">You have too many goals</p>
+
+  <div class="row">
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">{{ quote.quote }}</p>
+      <footer class="blockquote-footer">
+        <cite>{{ quote.author }}</cite>
+      </footer>
+    </blockquote>
+  </div>
 
   <hr />
 
